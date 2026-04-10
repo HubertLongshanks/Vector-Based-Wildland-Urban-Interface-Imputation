@@ -36,7 +36,7 @@ dissolved = wuiCells.dissolve( by=[ col for col in df.columns if col != df.activ
 
 
 ## Input Data Preparation
-Typically, you would use this tool with some measure of flammable landcover, like a subset of the CONUS landcover dataset along with building locatons for a specified area. You could also bring your own data for a specific area if it fits your workflow or needs better. Here we will discuss using CONUS landcover at 30M resolution and microsoft's open building locations dataset, which are both updated regurally and were used by *Carlson et. al.* as well.
+Typically, you would use this tool with some measure of flammable landcover, like a subset of the CONUS landcover dataset along with building locations for a specified area. You could also bring your own data for a specific area if it fits your workflow or needs better. Here we will discuss using CONUS landcover at 30M resolution and microsoft's open building locations dataset, which are both updated regurally and were used by *Carlson et. al.* as well.
 
 ### Working With Buildings Footprints
 You may choose to grab only a certain state or the whole US depending on your needs, this sample shows for a single state. Microsoft has made this dataset freely accessible and usable. https://planetarycomputer.microsoft.com/dataset/ms-buildings
@@ -59,7 +59,7 @@ def downloadState( state : str ) :
 
     with zipfile.ZipFile( io ) as file :
 
-        file.extractall( f"downloadedFiles" )
+        file.extractall()
 
     df = gpd.read_file('Ohio.geojson')
     df.to_crs( epsg=5070 , inplace=True)
