@@ -67,7 +67,7 @@ def downloadState( state : str ) :
 
 
 ### Downloading and Polygonizing Landcover
-You can download th latest landcover tif from the USGS website or do it programitically like so, then polgonize it ( this can take some time and you may want to subset by your area of interest if compute is limited ).
+You can download the latest landcover tif from the USGS website or do it programitically like so, then polygonize it ( this can take some time and you may want to subset by your area of interest if compute is limited ).
 
 ```py
 import requests 
