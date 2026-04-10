@@ -2,7 +2,6 @@ import geopandas as gp
 import pandas as pd
 import shapely
 import numpy as np
-import os
 from typing_extensions import Self
 
 
