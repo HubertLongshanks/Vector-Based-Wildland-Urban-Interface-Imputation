@@ -186,8 +186,9 @@ class WUIClassifier:
         for index, row in grid.iterrows():
 
             if index % split == 0:
-                pass
-                # print( f"{index} of {len(grid)} complete or {(index / len(grid)) * 100}%" )
+                print(
+                    f"{index} of {len(grid)} complete or {(index / len(grid)) * 100}%"
+                )
 
             searchArea: gp.GeoSeries = gp.GeoSeries(row.geometry).buffer(searchDistance)
 
