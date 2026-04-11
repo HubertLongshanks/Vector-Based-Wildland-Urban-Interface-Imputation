@@ -1,7 +1,7 @@
 # Vector Based Wildland Urban Interface Classification Tool
 
 ## About
-This tool was created in order to facilitate better WUI classification over the CONUS for downstream wildland fire related tasks. The tool is based on a 2022 paper and related work by Carlson , et. al. released in 2022 and using 2018 and 2016 source data - see: https://data.usgs.gov/datacatalog/data/USGS:617bfb43d34ea58c3c70038f
+This tool was created in order to facilitate better WUI classification over the CONUS for downstream wildland fire related tasks. The tool is based on a 2022 paper and related work by Carlson , et. al. released in 2022 - see: https://data.usgs.gov/datacatalog/data/USGS:617bfb43d34ea58c3c70038f
 
 This tool aims to facilitate easier classification of WUI environments at varying spatial resolutions especially for smaller, local workflows. This tool works exclusively with vector based data as opposed to raster (in contrast to Carlson. et. al.). This has some tradeoff - on the one hand you can specify an essentially arbitrary spatial resolution as long as it is supported by your source data and on the other you require significantly more computational resources - particurally for large areas like the entire CONUS. This workflow is best run with ample compute, ample time or over a smaller area at high resolution.
 
